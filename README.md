@@ -1,2 +1,2 @@
-# TAA HTML and CSS Projects
+# My HTML and CSS Course Projects for The Tech Academy
  
