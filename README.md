@@ -1,2 +1,2 @@
-# My HTML and CSS Projects for The Tech Academy
+# My HTML and CSS Course Projects for The Tech Academy
  
