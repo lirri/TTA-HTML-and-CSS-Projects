@@ -1,0 +1,16 @@
+p {
+    background-color: steelblue;
+    color: aliceblue;
+    text-align: center;
+    font-size: large;
+}
+h3  {
+    color: steelblue
+}
+h1 {
+    text-shadow: teal 2px 2px;
+}
+h2 {
+    text-shadow: 0 0 3px #00e1ff, 0 0 5px #17178a;
+    color: white;
+}
