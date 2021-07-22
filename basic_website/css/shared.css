@@ -1,111 +1,162 @@
+/* ----------------------------------------------
+    Author: Sarah Britton
+_________________________________________________
+    GENERIC STYLES   
+-------------------------------------------------*/
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
     background-color: #fff;
 }
 
+footer,
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-    color: rgba(0,141,165,1);
-    margin-left: 100px;
-    text-shadow: 1px .5px 4px rgba(0,0,0, 0.6);
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e91c1c;
+    text-shadow: 2px, 2px, 3px, rgba(0,0,0,0.5);
+}
+
+h1::after { /* This is the underline */
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: #e91c1c;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5)
+}
+
+h2 {
+    line-height: 50px;
+    color: e91c1c;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
 }
 
 .container {
-    width: 450px;
-    height: 450px;
-    background-color: #faebd7;
-    border: 2px solid black;
-    border-radius: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* ----------------------------------------------
-    SELECT ALL SQUARES IN THE ARRAY
--------------------------------------------------*/
-.container .squares:nth-child(-n+4) {
-    background-image: url("../images/icons/icons.png");
-    color: #fff;
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 25%;
-    cursor: pointer;
-    transition-property: transform .5s ease-in-out;
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: aut0;
+    margin-left: auto;
 }
 
-/* ----------------------------------------------
-    SELECT ALL SQUARES PARAMETERS IN THE ARRAY
--------------------------------------------------*/
-.squares:nth-child(-n+4) p{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: 900;
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix::after,
+.container::after,
+.navbar::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the images cannot render outside of their container without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
     text-align: center;
-    margin: 0;
-    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto; /* centers */
+    content: " ";
+    /* top:0;
+    left 0; */
+    /* postion: absolute; */ /* to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
 }
 
 /* ----------------------------------------------
-   INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+    HOME SECTION STYLES
 -------------------------------------------------*/
-.squares:nth-child(1) {
-    background: #4240FF;
-}
-
-.squares:nth-child(2) {
-    background: #ab3fdd;
-}
-
-.squares:nth-child(3) {
-    background: #ae163e;
-}
-
-.squares:nth-child(4) {
-    background: #00b200;
-}
-
-/* ----------------------------------------------
-   HOVER, TRANSLATE, & TRANSFORM EFFECTS
--------------------------------------------------*/
-.squares.squares:nth-child(-n+4):hover {
-    background-image: url("../images/icons/icons2.png");
-    transform: scale(.5);
-    animation-name: race;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(2.5,.2,.3.2);
-}
-
-.squares:nth-child(1):hover {
-    background: #13b4ff;
-}
-
-.squares:nth-child(2):hover {
-    background: #d861af;
-}
-
-.squares:nth-child(3):hover {
-    background: #81205f;
-}
-
-.squares:nth-child(4):hover {
-    background: #77b800;
-}
-
-.button:hover {
-    background-color: #33fb14;
+#home {
+    background: url(../images/planets.jpeg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* This is spacer before the Main Title logo */
+    padding-bottom: 500px; /* This is spacer after the Main Title logo */
     color: #fff;
-    cursor: pointer;
 }
 
-/* ----------------------------------------------
-   HOVER, TRANSLATE, & TRANSFORM EFFECTS
--------------------------------------------------*/
-@keyframes race {
-    0%, 100% {
-        transform: translateY(0px);
-        background-image: url("../images/icons/icons2.png"); 
-    }
-    50% {
-        transform: translateY(330px);
-    }
-}
