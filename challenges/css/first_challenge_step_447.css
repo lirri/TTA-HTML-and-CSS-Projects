@@ -1,0 +1,15 @@
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.photo:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: grayscale(90%);
+}
