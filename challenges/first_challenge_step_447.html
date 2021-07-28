@@ -5,13 +5,112 @@
         <meta charset="utf-8"> 
         <meta name="author" content="Sarah">
         <link rel="stylesheet" href="css/first_challenge_step_447.css">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <header>
-            <h4>First Challenge Step 447</h4>
-        </header>
-        <p>Centered Image Using CSS</p>
-        <p>Hover over image for filter.</p>
-        <img class="photo" src="img/tmnt_by_ancorgil_d7456g5-fullview.jpeg" alt="Ancorgil's rendition of adult TMNT.">
+        <!--NAV-->
+        <div class="navbar">
+            <ul class="menu">
+                <a href="#home"><li>HOME</li></a>
+                <a href="#about"><li>ABOUT</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
+            </ul>
+        </div>
+        <!--END NAV-->
+
+        <!--PHOTO-->
+        <div>
+            <div class="container">
+                <img class="photo" src="img/tmnt_by_ancorgil_d7456g5-fullview.jpeg" alt="Ancorgil's rendition of adult TMNT.">
+                <div class="text">
+                    <h3>Hover over me!</h3>
+                </div>
+                <div class="overlay">
+                    <div class="text">Overlay Fade!</div>
+                  </div>
+                <div> 
+                    <p>TMNT as adults imagined by <a href="https://www.deviantart.com/ancorgil/art/TMNT-430223333">Ancorgil</a></p>
+                </div>
+
+              </div> 
+        </div>
+        <!--END NAV-->
+
+        <!--TABLE-->
+        <div>
+            <table id="about" class="table">
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+                <tr>
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>Austria</td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>Helen Bennett</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>Canada</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>Italy</td>
+                </tr>
+              </table>
+        </div>
+       <!--END TABLE-->
+
+       <!--COLUMNS-->
+       <div class="column-container">
+            <div class="row">
+                <div class="column">
+                    <h2>Column 1</h2>
+                    <p>Text for column 1.</p>
+                </div>               
+                <div class="column">
+                    <h2>Column 1</h2>
+                    <p>Text for column 1.</p>
+
+                </div>
+            </div>
+        </div>
+        <!--END COLUMNS-->
+
+        <div class="container">
+            <video class="video_overlay" autoplay muted loop src="videos/waves.mp4"></video>
+            <div class="text">
+                <h3>These waves rock!</h3>
+            </div>
+        </div>
+
+        <div>
+            <p>Text for media query.</p>
+        </div>
+
     </body>
+
+    <footer>
+        <div class="footer">
+            <p id="contact">Author: Sarah Britton</p>
+            <p><a href="mailto:sarahqbritton@gmail.com.com">sarahqbritton@gmail.com</a></p>
+        </div>
+      </footer>
 </html>
